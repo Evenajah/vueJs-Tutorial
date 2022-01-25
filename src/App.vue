@@ -1,12 +1,14 @@
 <template>
   <div id="app">
-    <input v-model.number="age" type="number" v-model="person" />
+    <input type="number" v-model="person" />
     <button @click="shoPerson()">Click me</button>
+    <TestProp msg="test"></TestProp>
   </div>
 </template>
 
 <script>
 import HelloWorld from './components/HelloWorld.vue';
+import TestProp from './components/TestProp.vue';
 
 export default {
   name: 'App',
